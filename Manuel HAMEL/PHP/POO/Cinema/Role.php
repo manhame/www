@@ -12,7 +12,10 @@ class Role {
     public function getNomPersonnages() {
         return $this->_nomPersonnages;
     }
-    public function setNomPersonnages(string $nomPersonnage) {
+    public function getCasting() {
+        return $this->_castings;
+    }
+        public function setNomPersonnages(string $nomPersonnage) {
         $this->_nomPersonnages = $nomPersonnage;
     }
     // afficher les acteurs + films
@@ -25,5 +28,8 @@ class Role {
             echo "<li>".$casting."</li>"; 
         }
         echo "/ul";
+    }
+    public function __toString() {
+        return $this->getNomPersonnages();
     }
 }
