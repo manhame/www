@@ -20,7 +20,7 @@ class Role {
         $this->_castings[] = $casting; //on alimente l'objet "_castings" tableau vide élément par élément
     }
     public function afficherCasting() {
-        echo "<h2>".$this->getNomPersonnage()." a été joué par </h2>";
+        echo "<h2>".$this->getNomPersonnages()." a été joué par </h2>";
         echo "<ul>";
         foreach ($this-> _castings as $casting) {
             echo "<li>".$casting."</li>"; 

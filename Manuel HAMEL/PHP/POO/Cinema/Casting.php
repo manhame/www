@@ -10,6 +10,10 @@ class Casting {
         $this->_acteurs = $acteur;
         $this->_roles = $role;
         $this->_films = $film;
+
+        $this->_acteurs->ajouterCasting($this);
+        $this->_roles->ajouterCasting($this);
+        $this->_films->ajouterCasting($this);
     }
     public function getActeurs() {
         return $this->_acteurs;
