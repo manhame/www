@@ -34,5 +34,7 @@ class Casting {
     public function setFilms(Film $film) {
         $this->_films = $film;
     }
-
+public function __toString() {
+    return $this->getActeurs()." joue ".$this->getRoles()." dans ".$this->getFilms()."<br>";
+}
 }

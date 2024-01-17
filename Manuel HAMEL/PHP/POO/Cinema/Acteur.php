@@ -13,9 +13,8 @@ class Acteur extends Personne {
         $this->_castings[] = $casting; //on alimente l'objet "_castings" tableau vide élément par élément
     }
     public function afficherCasting() {
-        echo "<h2>".$this." a joué </h2>";
         echo "<ul>";
-        foreach ($this-> _castings as $casting) {
+        foreach ($this->_castings as $casting) {
             echo "<li>".$casting."</li>"; 
         }
         echo "</ul>";
