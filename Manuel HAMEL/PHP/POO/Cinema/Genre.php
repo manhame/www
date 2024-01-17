@@ -1,11 +1,11 @@
 <?php
 
 class Genre {
-    private string $_categorie;
+    private string $_categories;
     private array $_films;
 
     public function __construct(string $categorie) {
-        $this->_categorie = $categorie;
+        $this->_categories = $categorie;
         $this->_films = [];
     }
 
@@ -13,7 +13,13 @@ class Genre {
         $this->_films[] = $film;
     }
 
-    public function afficherFilm() {
+        public function getCategorie() {
+        return $this->_categories;
+    }
+    public function setCategorie($categorie) {
+        $this->_categories->$categorie;
+    }
+    public function afficherFilms() {
         echo "<h2> Dans le genre ".$this->getCategorie()." on retrouve les films suivants :</h2>";
         echo "<ul>";
             foreach($this->_films as $film) {
@@ -21,12 +27,4 @@ class Genre {
             }
         echo "</ul>";
     }
-
-    public function getCategorie() {
-        return $this->_categorie;
-    }
-    public function setCategorie($categorie) {
-        $this->_categorie->$categorie;
-    }
-
 }

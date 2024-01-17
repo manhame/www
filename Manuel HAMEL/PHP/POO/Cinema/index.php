@@ -12,18 +12,19 @@ $aventure = new Genre("Aventure");
 
 $fil1 = new Film ("ET", "1980-12-12", 120, $rea1, $gen1);
 $fil2 = new Film ("Jurassic park", "1978-12-12", 148, $rea1, $gen1);
-$pdc = new Film ("Pirates des Caraibes", "2000-01-01", 148, $rea1, $aventure);
 
 $rea1-> afficherFilms();
-$gen1->afficherFilm();
+$gen1->afficherFilms();
 
-$sparrow = new Role("Jack Sparrow");
 $johnnyDepp = new Acteur("Johnny", "DEPP", "M", "1970-01-01");
+$sparrow = new Role("Jack Sparrow");
+$pdc = new Film ("Pirates des Caraibes", "2000-01-01", 148, $rea1, $aventure);
 
 $casting1 = new Casting($johnnyDepp, $sparrow, $pdc);
 $johnnyDepp->afficherCasting();
-$pdc->afficherCasting();
 $sparrow->afficherCasting();
+$pdc->afficherCasting();
+
 
 /*
 afficherRoles et afficherFilms

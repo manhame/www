@@ -15,12 +15,10 @@ class Acteur extends Personne {
     public function afficherCasting() {
         echo "<h2>".$this." a joué </h2>";
         echo "<ul>";
-        foreach ($this->_nomPersonnages as $nomPersonnage) {
-        echo "<li>".$nomPersonnage."</li>";     
+        foreach ($this-> _castings as $casting) {
+            echo "<li>".$casting."</li>"; 
         }
-        foreach ($this->_films as $film) {
-        echo "<li>".$film."</li>";
-        }
+        echo "</ul>";
     }
 }
     // afficher la liste de ses films + rôles

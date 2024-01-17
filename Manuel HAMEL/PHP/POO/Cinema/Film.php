@@ -15,7 +15,7 @@ class Film {
         $this->_realisateur = $realisateur;
         $this->_genre = $genre;
 
-        $this->_castings = [];
+        $this->_castings =[];
 
         $this->_realisateur->ajouterFilm($this);
         $this->_genre->ajouterFilm($this);
@@ -66,14 +66,13 @@ class Film {
     public function afficherCasting() {
         echo "<h2> Le casting de ".$this." est </h2>";
         echo "<ul>";
-        foreach ($this-> _acteurs as $acteur) {
-        echo "<li>".$acteur."</li>";     
+        foreach ($this-> _castings as $casting) {
+        echo "<li>".$casting."</li>";     
         }
-        foreach ($this->_nomPersonnages as $nomPersonnage) {
-        echo "<li>".$nomPersonnage."</li>";
-        }
+        echo "</ul>";
     }
 }
+
     // afficher les acteurs + rôles
 
     

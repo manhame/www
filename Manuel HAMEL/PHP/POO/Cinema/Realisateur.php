@@ -2,7 +2,7 @@
 
 class Realisateur extends Personne {
    
-    protected array $_films;//on déclare un attribut "tableau" pour préparer la liaison des classes
+    private array $_films;//on déclare un attribut "tableau" pour préparer la liaison des classes
 
     public function __construct(string $prenom, string $nom, string $sexe, string $dateNaissance) {
        parent::__construct($prenom, $nom, $sexe, $dateNaissance);
